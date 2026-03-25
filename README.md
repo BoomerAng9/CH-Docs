@@ -1,37 +1,45 @@
-# CH-Docs — AIMS Ecosystem Documentation Hub
+# CH-Docs — Chicken Hawk Documentation
 
-Centralized documentation for the entire A.I.M.S. ecosystem.
+All documentation files for **Chicken Hawk** — the coordinator, safety bot, and dispatcher in the A.I.M.S. ecosystem.
 
-## What This Repo Is
+## What Lives Here
 
-CH-Docs is the **Tier 2 documentation satellite** in the AIMS ecosystem. It holds:
-- API documentation for all services
-- Architecture guides for the platform
-- SOPs (Standard Operating Procedures)
-- Integration guides for connecting satellite repos
-- Ecosystem topology reference
+- System prompts and configuration for Chicken Hawk
+- Gateway architecture and dispatch logic
+- Safety enforcement rules and compliance policies
+- SOP references for coordinator operations
+- Lil_Hawk management documentation (spawn rules, cap enforcement, evidence requirements)
+- Swarm registry specs
+
+## Chicken Hawk Identity
+
+**Chicken Hawk = OpenClaw = NemoClaw = MyClaw runtime identity.**
+One product. One execution surface. These names all refer to the same deployed instance.
+
+## Agent Hierarchy
+
+```
+ACHEEVY (Digital CEO / Executive Orchestrator)
+  → Chicken Hawk (Coordinator / Safety / Dispatcher)  ← THIS REPO DOCUMENTS THIS LAYER
+    → Boomer_Angs (Manager-level agents, pattern: Name_Ang)
+      → Lil_Hawks (Worker-level agents, pattern: Lil_X_Hawk)
+```
+
+## Rules Chicken Hawk Enforces
+
+1. Chicken Hawk is the master agent — it spawns and governs Lil_Hawks
+2. Lil_Hawks are stateless and narrow — one capability per hawk
+3. LUC gates are mandatory — every billable action passes `canExecute()` first
+4. Max 6 parallel Lil_Hawks (swarm registry enforced)
+5. Evidence required on every task — no proof, no done
+6. Voice-first is default
 
 ## Ecosystem Position
 
 | Property | Value |
 |----------|-------|
 | Hub | [AIMS](https://github.com/BoomerAng9/AIMS) |
-| Tier | 2 (Documentation) |
-| Role | Documentation hub |
-| Provides | documentation, api-docs, architecture-guides, sop-reference |
-| Consumes | Nothing (read-only reference) |
-
-## Agent Hierarchy
-
-```
-ACHEEVY (Digital CEO / Executive Orchestrator)
-  → Chicken Hawk (Coordinator / Safety / Dispatcher)
-    → Boomer_Angs (Manager-level agents, pattern: Name_Ang)
-      → Lil_Hawks (Worker-level agents, pattern: Lil_X_Hawk)
-```
-
-## Branding
-
-- **ACHEEVY Helmet** = the ONLY primary chat avatar across all repos
-- **Colors**: Gold (#C8A84E), Dark Gold (#8B7635), Navy (#1A1A2E), Accent (#FFD700)
-- **One narrator**: Only ACHEEVY speaks to users. Never expose agent names publicly.
+| Runtime Code | [Chicken-Hawk](https://github.com/BoomerAng9/Chicken-Hawk) |
+| This Repo | Documentation and specs for Chicken Hawk |
+| Tier | 2 |
+| Role | Chicken Hawk documentation |
