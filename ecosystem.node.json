@@ -4,31 +4,25 @@
   "repo": "BoomerAng9/CH-Docs",
   "tier": 2,
   "role": "documentation",
-  "label": "CH-Docs — Documentation Hub",
-  "description": "Centralized documentation for the entire AIMS ecosystem. API docs, architecture guides, SOPs, integration references. Read-only reference — consumes nothing, serves all repos.",
-  "provides": ["documentation", "api-docs", "architecture-guides", "sop-reference"],
+  "label": "CH-Docs — Chicken Hawk Documentation",
+  "description": "All Chicken Hawk documentation files. System prompts, gateway configs, dispatch SOPs, safety policies, coordinator architecture, Lil_Hawk management rules. CH = Chicken Hawk.",
+  "provides": ["chickenhawk-docs", "dispatch-sops", "safety-policies", "coordinator-architecture", "lil-hawk-management-docs"],
   "consumes": [],
   "endpoints": {},
   "hub": "BoomerAng9/AIMS",
   "peers": [
     "BoomerAng9/AIMS",
-    "BoomerAng9/myclaw",
     "BoomerAng9/Chicken-Hawk",
-    "BoomerAng9/Agent-ACHEEVY-009",
-    "BoomerAng9/GRAMMAR",
-    "BoomerAng9/acheevy-whisper-build",
-    "BoomerAng9/destinations-ai",
-    "BoomerAng9/the-perform-platform",
-    "BoomerAng9/LUC-Locale-Universal-Calculator",
-    "BoomerAng9/Locale-by-ACHIEVEMOR-2",
-    "BoomerAng9/acheevy.digital"
+    "BoomerAng9/myclaw",
+    "BoomerAng9/Agent-ACHEEVY-009"
   ],
   "chatIcon": {
     "asset": "assets/acheevy-helmet.png",
     "rule": "ACHEEVY Helmet is the ONLY primary chat avatar."
   },
   "context": {
-    "purpose": "Single source of truth for all ecosystem documentation. Every repo's API, architecture, and SOP docs should be mirrored or linked here.",
-    "naming": "CH = Chicken Hawk origin. The docs hub started as Chicken Hawk's documentation but now covers the full ecosystem."
+    "purpose": "Houses all Chicken Hawk documentation — system prompts, gateway architecture, dispatch logic, safety enforcement rules, SOP references, and Lil_Hawk management.",
+    "naming": "CH = Chicken Hawk. This is Chicken Hawk's doc repo.",
+    "relationship": "Chicken-Hawk repo has the runtime code. CH-Docs has the documentation, specs, and reference material for Chicken Hawk."
   }
 }
